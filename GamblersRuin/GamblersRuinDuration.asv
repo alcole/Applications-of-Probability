@@ -1,0 +1,12 @@
+function [ output_args ] = GamblersRuinDuration( a, j, p )
+% calculate the expected duration
+% Gamblers ruin in the style of a simple random walk, where p + q = 1
+%  a - The Gambler and opponent have £a between them
+%      If the opponent has unlimited resources set a to Inf
+%  j - The Gambler begins with £j
+%  p - The probability the Gambler wins a round of the game
+%  q - The probability the Gambler looses a round of the game = 1 - p
+%  qj - The probability the Gambler is ruined
+
+end
+
