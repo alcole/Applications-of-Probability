@@ -7,11 +7,12 @@ function [ ] = GamblersRuinSummary( a, j, p )
 %  p - The probability the Gambler wins a round of the game
 %  q - The probability the Gambler looses a round of the game = 1 - p
 
-qj = 0; % Probability the Gambler is ruined
-Dj = 0; % Expected duration of the game
+% Probability the Gambler is ruined
+qj = GamblersRuinProb( a, j, p); 
 
-qj = GamblersRuinProb( a, j, p);
+% Expected duration of the game
 Dj = GamblersRuinDuration( a, j, p);
+
 
 fprintf('The probability the Gambler looses is %f\n', qj);
 if Dj == -1
