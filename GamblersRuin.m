@@ -25,7 +25,7 @@ if a == Inf
     elseif p < 0.5
         Dj = j / (q - p);
     else 
-        Dj = -1;
+        Dj = -1; % No expected probability
     end
     
 % the case with fintite resources   
