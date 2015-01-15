@@ -2,4 +2,5 @@
 Implementations of some of the formula and functions relating to the applications of probability
 
 Including
+
 1. The Gambler's Ruin
