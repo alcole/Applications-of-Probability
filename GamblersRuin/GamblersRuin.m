@@ -6,7 +6,7 @@ function [ ] = GamblersRuin( a, j, p, n )
 %  j - The Gambler begins with £j
 %  p - The probability the Gambler wins a round of the game
 %  n - (Optional) the number of steps 
-%  q - (caluclated)The probability the Gambler looses a round of the game = 1 - p
+%  q - (calculated)The probability the Gambler looses a round of the game = 1 - p
 q = 1 - p;
 
 % Probability the Gambler is ruined
