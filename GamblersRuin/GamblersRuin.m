@@ -1,4 +1,4 @@
-function [ ] = GamblersRuinSummary( a, j, p )
+function [ ] = GamblersRuin( a, j, p )
 %GAMBLERSRUIN Summary 
 % Gamblers ruin in the style of a simple random walk, where p + q = 1
 %  a - The Gambler and opponent have £a between them
@@ -15,7 +15,7 @@ Dj = GamblersRuinDuration( a, j, p);
 
 
 fprintf('The probability the Gambler looses is %f\n', qj);
-if Dj == -1
+if Dj < 0
     fprintf('There is no expected duration of the game\n');
 else
     fprintf('The expected duration of the game is %.2f rounds\n ', Dj);
