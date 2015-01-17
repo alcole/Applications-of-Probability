@@ -24,10 +24,12 @@ else
 end 
 fprintf('\n');
 
+[EXn, VXn] = SimpleRandomWalk( n, p  );
+
 %calculate mean and variance if number of steps supplied
 if nargin == 4
-    fprintf('E(X_n) = %.4f\n', n*(p-q));
-    fprintf('V(X_n) = %.4f\n', 4*n*p*q);
+    fprintf('E(X_n) = %.4f\n', EXn);
+    fprintf('V(X_n) = %.4f\n', VXn);
 end
 
 end
