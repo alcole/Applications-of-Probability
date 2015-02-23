@@ -25,8 +25,9 @@ K = 1;
 
 if n > 1
    i = 1;
-   while i < n
+   while (i < n)
       K =  K + ((n * rho)^i)/factorial(i);
+      i = i + 1;
    end
    K = K + ((n * rho)^n)/(factorial(n)*(1 - rho));
 end
