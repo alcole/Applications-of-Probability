@@ -1,6 +1,6 @@
 # Applications-of-Probability
 Implementations of some of the formula and functions relating to the applications of probability
-Based on the content of the OU course of the same name (course code M343)
+Based on the content of the OU course of the same name (course code M343).
 The course description is here: http://www.open.ac.uk/courses/modules/m343
 
 Including
