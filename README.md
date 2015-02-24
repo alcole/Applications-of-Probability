@@ -7,3 +7,4 @@ Including
 
 1. TMA LaTeX template
 2. The Gambler's Ruin functions
+3. Markov Queue(M/M/n) distribution calculator
