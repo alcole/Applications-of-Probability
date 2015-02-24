@@ -40,6 +40,8 @@ for i = 1:2*n
    pxplus(i) = (1 / K) * ((n)^(n) / factorial(n)) * rho^(i + n - 1);
 end
 
+fprintf('Traffic intensity = %.4f\n', rho);
+
 fprintf('Idol time = %.4f\n', px(1));
 
 fprintf('Probability customer receives immediate service = %.4f\n', ...
