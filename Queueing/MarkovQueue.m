@@ -36,12 +36,18 @@ for i = 1:n
    px(i) = (1 / K) * (n^(i - 1) / factorial(i - 1)) * rho^(i - 1);
 end
 
-for i = 1:n 
-   pxplus(i) = (1 / K) * ((i - 1)^(i - 1) / factorial(n)) * rho^(i - 1);
+for i = 1:2*n 
+   pxplus(i) = (1 / K) * ((n)^(n) / factorial(n)) * rho^(i + n - 1);
 end
 
 fprintf('Idol time = %.4f\n', px(1));
 
+fprintf('Probability customer receives immediate service = %.4f\n', ...
+        sum(px));
 
+fprintf('Probability all servers busy and queue size one = %.4f\n', ...
+         pxplus(2));
+    
+   % pxplus
 end
 
