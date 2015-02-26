@@ -8,5 +8,5 @@ Including
 1. TMA LaTeX template
 2. The Gambler's Ruin functions
 3. Queueing functions
-..* Markov Queue(M/M/n) distribution calculator
-..* M/G/1 Queue mean distribution calculator with Pollaczek's formula
+  * Markov Queue(M/M/n) distribution calculator
+  * M/G/1 Queue mean distribution calculator with Pollaczek's formula
