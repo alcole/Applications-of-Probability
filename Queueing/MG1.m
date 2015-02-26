@@ -1,6 +1,6 @@
 function [ rho ] = MG1( lambda, mean, variance )
 %MG1 calculates the traffic intensity and mean equilibrium queue size
-%   Detailed explanation goes here
+%   for the M/G/1 model of queues
 
 % traffic intensity rho
 rho = lambda * mean;
