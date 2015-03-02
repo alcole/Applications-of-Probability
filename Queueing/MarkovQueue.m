@@ -14,6 +14,9 @@ else
     fprintf('Calculating pmf of equilibrium queue size distribution\n');
 end
 
+if n == 1
+    fprintf('Mean equilibrium queue size = %.4f\n', rho/(1-rho));
+end
 % store the distribution values for less than no of servers
 px = ones(1,n);
 
@@ -50,6 +53,6 @@ fprintf('Probability customer receives immediate service = %.4f\n', ...
 fprintf('Probability all servers busy and queue size one = %.4f\n', ...
          pxplus(2));
     
-   % pxplus
+    pxplus
 end
 
