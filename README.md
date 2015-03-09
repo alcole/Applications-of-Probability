@@ -10,3 +10,4 @@ Including
 3. Queueing functions
   * Markov Queue(M/M/n) distribution calculator
   * M/G/1 Queue mean distribution calculator with Pollaczek's formula
+4. Epidemics
