@@ -8,6 +8,8 @@ function [ Beta_y ] = EpidemicRate( Beta, y, n )
 n = n - 1;
 
 x = n + 1 - y;
+
 Beta_y = (Beta * y * x) / n;
+
 end
 
