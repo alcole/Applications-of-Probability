@@ -6,10 +6,10 @@ function [ output_args ] = EpidemicSummary( Beta, y, com )
 
 n = com - 1;
 % get all Beta_y
-Beta_ys =   ones(1, n - y);
+Beta_ys =   ones(1, n + 1 - y);
 % Beta_y = Beta_ys(y)
 for i=1:n-y
-    Beta_ys(i) = EpidemicRate( Beta, y - 1 + i, n );
+    Beta_ys(i) = EpidemicRate( Beta, y - 1 + i, n + 1 );
 end
 Beta_ys
 %expected time until everyone is infected

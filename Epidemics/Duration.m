@@ -8,7 +8,7 @@ W = 0;
 VW = 0;
 
 for i=y0:n-1
-    [E, V] = ( WaitingTimesParams(EpidemicRate(Beta, i, n-1)));
+    [E, V] = ( WaitingTimesParams(EpidemicRate(Beta, i, n)));
     W = W + E;
     VW = VW + V;
     i = i + 1;
