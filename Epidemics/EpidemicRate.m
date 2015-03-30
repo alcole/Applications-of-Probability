@@ -1,11 +1,11 @@
-function [ Beta_y ] = EpidemicRate( Beta, y, n )
+function [ Beta_y ] = EpidemicRate( Beta, y, com )
 %EPIDEMICRATE Calculates the epidemic rate Beta_y
 %   Beta    = rate of the Poisson process
 %   y       = number of individuals of a certain type
-%   n       = community size
+%   com       = community size
 %   x       = no of individuals of the other type
 
-n = n - 1;
+n = com - 1;
 
 x = n + 1 - y;
 

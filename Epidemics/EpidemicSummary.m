@@ -1,9 +1,10 @@
-function [ output_args ] = EpidemicSummary( Beta, y, n )
+function [ output_args ] = EpidemicSummary( Beta, y, com )
 %EPIDEMICSUMMARY Prints all epidemic related info
 %   Beta    = rate of the Poisson process (contact rate)
 %   y       = number of individuals of a certain type
-%   n       = community of size n + 1
+%   com     = community of size n + 1
 
+n = com - 1;
 % get all Beta_y
 Beta_ys =   ones(1, n - y);
 % Beta_y = Beta_ys(y)
